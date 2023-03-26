@@ -1,0 +1,543 @@
+*{
+    margin: 0;
+    overflow-x:none ;
+   
+}
+a{
+    text-decoration: none;
+}
+.navigationA a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fafafa;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 6px 15px;
+    transition: .5s;
+}
+.navigationA a:hover,  .navigatiion a.active{
+    color: #333;
+}
+.navigationA1
+{
+    background-color: #CDA309;
+    align-items: flex-start;
+    padding: 15px;
+    line-height: 30px;
+}
+.paymentButton{
+    background-color: #F9E4D4;
+    border-radius: 8px;
+    position: absolute;
+    display: inline-flex;
+    right: 0;
+    
+}
+
+.paymentButton:hover{
+    background-color: #ffffff;
+    
+
+
+}
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+    display:flex;
+    gap: 6px;
+    z-index: 99999;
+    
+    
+    
+}
+.dropdown > a{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 72px;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Roboto;
+    font-weight: 40px;
+    z-index: 99999;
+    color: #CDA309;
+} 
+.dropdown > a:hover{
+    color: #CDA309;
+    z-index: 99999;
+} 
+.dropdown:hover .menu{
+    opacity: 1;
+    visibility: visible;
+    
+    z-index: 99999;
+}
+
+
+.menu > a {
+    font-size: 15px;
+    padding: 12px 50px;
+    text-decoration: none;
+    z-index: 9999999;
+    
+}
+.menu > a:hover{
+    background:#F9E4D4;
+    color: #ca6b0c;
+}
+.menu{
+    position:absolute;
+    top: 60px;
+    display: grid;
+    width: 250px;
+    padding: 8px 0;
+    padding-bottom: 40px;
+    background:  #ffffff;
+    border: 1px solid #e1e1e1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s;
+    border-top-color:#F9E4D4 ;
+    font-size: 14px;
+    z-index: 9999999;
+   
+    
+    
+}
+.navigationB{
+    display:inline-flex;
+    gap: 25px;
+    padding: 20px;
+    padding-top: 5px;
+    position: absolute;
+    right: 0;
+    
+}
+.navB{
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    background-color: #F9E4D4;
+  }
+
+  @media(max-width:1244px)
+  {
+      
+      .textcontainer{
+          padding: 10px 0;
+          text-align: center;
+  
+     
+  }
+}
+  
+.vision{
+    display: block;
+    position: relative;
+
+}
+
+
+@media(max-width:976px)
+{
+    
+    .textcontainer{
+        padding: 10px 0;
+        text-align: center;
+
+    }
+    .bottom{
+       
+        flex-direction: column;
+    }
+    h1{
+
+        font-size: 32px;
+    }
+    .contact h2, .about h2{
+        font-size: 32px;
+    }
+
+}
+
+
+
+
+
+
+.work{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) ;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 50px auto;
+    
+}
+.work img{
+    max-width: 320px;
+    height: 196px;
+ }
+
+          
+.small{
+    display: none;
+}
+
+@media(max-width:1200px)
+{
+    
+    .textcontainer{
+        padding: 10px 0;
+        text-align: center;
+
+   
+}
+.small{
+   display: block;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+
+
+
+    
+}
+.navigationB{
+    display: none;
+}
+
+}
+ .dropdown1 {
+        overflow: hidden;
+}    
+ 
+      .dropdown1 {
+        top: 0;
+        left: 0;
+        height: 100%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background: #f7f7f7;
+        z-index:10;  
+        overflow:hidden;
+        box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+        }
+      
+     
+      .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: rgb(255, 255, 255);
+        
+      }
+      .dropdown1 button:hover{
+        opacity: 0;
+      }
+     
+      .dropdown-content {
+        display: none;
+        z-index: 100;
+        position: relative;
+        background-color: #f9f9f9;
+        width: 100%;
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      
+      }
+      
+      
+      .dropdown-content {
+        background: rgb(255, 255, 255);
+        padding: 16px;
+        color: white;
+      }
+      
+  
+      .dropdown1:hover .dropdown-content {
+        display: block;
+      }
+      
+      
+   
+
+      
+      .column a:hover {
+        background-color: #ddd;
+      }
+      
+    
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .small{
+    display: none;
+}
+.missionVis h4{
+    font-size: 24px;
+    position: relative;
+}
+.missionVis h3{
+    font-size: 48px;
+}
+.missionVis{
+    color: #562B3C;
+    background-color: #F9E4D4;
+    height: 543px;
+    display: flex;
+    column-gap: 30%;
+  
+}
+@media(max-width:1550px)
+{
+    .missionVis
+    {
+        column-gap: 10%;
+        height: 580px;
+   }
+ 
+}
+
+@media(max-width:1430px){
+    .missionVis .vis{
+        width: 18%;
+        padding-left: 200px;
+        padding-top: 50px;
+    }
+}
+
+@media(max-width:930px){
+    .missionVis{
+        display: grid;
+    }
+    .missionVis .vis{
+        width: 20%;
+        padding-left:40%;
+    }
+}
+
+.vis{
+    width: 18%;
+    background-color:#F9E4D4;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    padding-left: 300px;
+    padding-top: 50px;
+}
+.mission{
+   
+    background-color:#F9E4D4;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    
+    row-gap: 30px;
+    padding-top: 50px;
+}
+.mission li{
+    font-size: 24px;
+    list-style:20px;
+    font-weight: 300;
+
+}
+
+
+.testHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-size: 28px;
+    color: #562B3C;
+}
+.testImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+
+.btn span {         
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+
+  
+  :active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+  }
+  ::before,
+  ::after {
+    position: absolute;
+    content: "";
+  }
+  
+  .btn-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 10px auto  35px;
+  }
+  .btn {
+    position: relative;
+    right: 20px;
+    display: inline-block;
+    width: auto; height: auto;
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+    margin: 0px 25px 15px;
+    min-width: 150px;
+  }
+
+
+ 
+  .btn-1::before {
+    background-color: #F9E4D4;
+    transition: 0.3s ease-out;
+  }
+  .btn-1 span {
+    color: #562B3C;
+    border: 1px solid #562B3C;
+    transition: 0.2s 0.1s;
+  }
+  .btn-1 span:hover {
+    color: #F9E4D4;
+    transition: 0.2s 0.1s;
+    background-color: #562B3C;
+  }
+  
+ 
+
+
+.Leadership{
+    background-color: #F9E4D4;
+}
+.Leadershipcontainer {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+   background-color:#562B3C ;
+    width: 300px;
+    color: #F9E4D4;
+  }
+  .image {
+    
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  .row{
+   padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+   
+  }
+  @media(max-width:1250px){
+    .row{
+        display:grid;
+    }
+}
+  
+
+  .btn.hover-border-6::before,
+.btn.hover-border-6::after {
+  top: 0;
+  transition: width 0.2s 0.35s ease-out;
+}
+.btn.hover-border-6::before {
+  right: 50%;
+}
+.btn.hover-border-6::after {
+  left: 50%;
+}
+.btn.hover-border-6:hover::before,
+.btn.hover-border-6:hover::after {
+  width: 50%;
+  transition: width 0.2s ease-in;   
+}
+
+.btn.hover-border-6 span::before,
+.btn.hover-border-6 span::after {
+  width: 0%; height: 0%;
+  background: transparent;
+  opacity: 0;
+  z-index: 2;
+  transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s 0.35s;
+}
+.btn.hover-border-6 span::before {
+  top: 0; left: 0;
+  border-left: 2px solid #562B3C;
+  border-bottom: 2px solid #562B3C;
+}
+.btn.hover-border-6 span::after {
+  top: 0; right: 0;
+  border-right: 2px solid #562B3C;
+  border-bottom: 2px solid #562B3C;
+}
+.btn.hover-border-6 span:hover::before,
+.btn.hover-border-6 span:hover::after {
+  width: 50%; height: 96%;
+  opacity: 1;
+  transition: height 0.2s 0.2s ease-in, width 0.2s 0.4s linear, opacity 0s 0.2s;   
+}
+
+/* 17. hover-border-7 */
+.btn.hover-border-7::before,
+.btn.hover-border-7::after {
+  bottom: 0;
+  transition: width 0.2s 0.35s ease-out;
+}
+.btn.hover-border-7::before {
+  right: 50%;
+}
+.btn.hover-border-7::after {
+  left: 50%;
+}
+.btn.hover-border-7:hover::before,
+.btn.hover-border-7:hover::after {
+  width: 50%;
+  transition: width 0.2s ease-in;   
+}
+
+.btn.hover-border-7 span::before,
+.btn.hover-border-7 span::after {
+  width: 0%; height: 0%;
+  background: transparent;
+  opacity: 0;
+  z-index: 2;
+  transition: width 0.2s ease-in, height 0.15s 0.2s linear, opacity 0s 0.35s;
+}
+.btn.hover-border-7 span::before {
+  bottom: 0; left: 0;
+  border-left: 2px solid #562B3C;
+  border-top: 2px solid #562B3C;
+}
+.btn.hover-border-7 span::after {
+  bottom: 0; right: 0;
+  border-right: 2px solid #562B3C;
+  border-top: 2px solid #562B3C;
+}
+.btn.hover-border-7 span:hover::before,
+.btn.hover-border-7 span:hover::after {
+  width: 50%; height: 96%;
+  opacity: 1;
+  transition: height 0.2s 0.2s ease-in, width 0.2s 0.4s linear, opacity 0s 0.2s;   
+}
