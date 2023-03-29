@@ -288,6 +288,7 @@ a{
     height: 543px;
     display: flex;
     column-gap: 30%;
+    
   
 }
 @media(max-width:1550px)
@@ -296,6 +297,7 @@ a{
     {
         column-gap: 10%;
         height: 580px;
+        height: auto;
    }
  
 }
@@ -343,6 +345,40 @@ a{
     font-weight: 300;
 
 }
+.Quickfacts{
+  display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #562B3C;
+    height: auto;
+    margin: 0;
+   
+}
+.boxes
+{
+ display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(350px,1fr)) ;
+  max-width: 1400px;
+  margin: 50px auto;
+  gap: 25px;
+  
+}
+.box{
+  padding-top: 20%;
+  max-width: 320px;
+  border-radius: 10px;
+  padding: 90px 0 90px 0 ;
+  
+}
+
+
+@media(max-width:1000px){
+  .boxes{
+    display: block;
+  }
+}
+
 
 
 .testHeader{
@@ -453,6 +489,7 @@ a{
   @media(max-width:1250px){
     .row{
         display:grid;
+        padding: 50px;
     }
 }
   
