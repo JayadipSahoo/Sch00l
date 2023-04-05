@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >School</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script type="text/javascript" >
+        $( document ).ready(function() {
+  
+            let slider = $('.slider .items');
+            let items = $('.slider .items .item .child')
+            const leftButton = $('#left')
+            const rightButton = $('#right')
+            
+            let scrollPos = 0
+            if (scrollPos >= 0) leftButton.hide()
+            
+            leftButton.click(function() {
+              scrollPos += slider.width();
+              if (scrollPos >= 0) {
+                leftButton.hide()
+                scrollPos = 0
+              }
+              rightButton.show()
+              slider.css('transform', "translate3d(" + scrollPos + "px, 0px, 0px)")
+            });
+          
+            rightButton.click((e) => {
+              scrollPos -= slider.width();
+              if (scrollPos <= -(items.innerHeight() - 2) * 15) rightButton.hide()
+              leftButton.show()
+              slider.css('transform', "translate3d(" + scrollPos + "px, 0px, 0px)")
+            });
+          
+          });
+    </script>
+</head>
+<body>
+
+
+
+
+
+
+    <!--THE TOP MOST NAVIGATION BAR-->
+    <div class="navigationA1">
+    <nav class="navigationA">
+        <a href="#" >SAP Portal</a>
+        <a href="#">Library</a>
+        <a href="#">Notices</a>
+        <a href="#">Alumini</a>
+        <a href="#">Staff</a>
+        <a href="#">Sport</a>
+        <a href="#">Examination</a>
+        <a href="#">Placement</a>
+        <a href="#">Careers</a>
+        <a href="#">Founder</a>
+        <a href="#">A-Z Index</a>
+        <a href="#">Brochure</a>
+        <a href="#" class="paymentButton" style="color: #CDA309">
+            Fee payment<span></span>
+            </a>
+
+    </nav>
+    </div>
+    
+    
+</div>
+<!---2nd Navigation Bar-->
+<section class="navigation2">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!"><img src="./images/logo.png" alt=""></a>
+      </div>
+      <div>
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="#!">About School</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="#!">X</a>
+              </li>
+              <li>
+                <a href="#!">Y</a>
+              </li>
+              <li>
+                <a href="#!">Z</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!">Academics</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="#!">X</a>
+              </li>
+              <li>
+                <a href="#!">Y</a>
+              </li>
+              <li>
+                <a href="#!">Z</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#!">Research</a>
+          </li>
+          
+          <li>
+            <a href="#!">News & Events</a>
+          </li>
+          <li>
+            <a href="#!">Explore</a>
+          </li>
+          <li>
+            <a href="#!">Virtual Tour</a>
+          </li>
+          <li>
+            <a href="#!">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!">Admission Open</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="#!">X</a>
+              </li>
+              <li>
+                <a href="#!">Y</a>
+              </li>
+              <li>
+                <a href="#!">Z</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+      
+    </div>
+  </section>
+  
+
+<!--Carousel effect for slide flex-->
+<div class="carousel">
+    <div class="parent">
+        <div class="slide" id="slide1">1</div>
+        <div class="slide" id="slide2">2</div>
+        <div class="slide"  id="slide3">3</div>
+        <div class="slide" id="slide4">4</div>
+        <div class="slide" id="slide5">5</div>
+      </div>
+        </div>
+
+
+
+
+    <div class="part4">
+        <h2 >SCHOOL CIRICULLUM CELEBRATION</h2>
+        <hr>
+    </div>
+
+ 
+
+
+
+    
+<!--3 card container-->
+    <section class="work">
+         <div class="gridcontainer">
+            <div class="card">
+                <h3>School Silver KARNIVAL</h3>
+                <div class="imagecontainer">
+                    <img src="./images/box/grey-background.jpg" alt="web dev"/>
+                </div>
+                <button class="my-button">Explore<span></span></button>
+                
+            </div>
+        </div>
+       
+        <div class="gridcontainer">
+            <div class="card">
+                <h3>School Silver Karnival</h3>
+                <div class="imagecontainer">
+                    <img src="./images/box/grey-background.jpg" alt="app dev"/>
+                </div>
+                <button class="my-button">Explore<span></span></button>
+            </div>
+        </div>
+
+        <div class="gridcontainer">
+            <div class="card" id="card3">
+                <h3>School Silver Karnival</h3>
+                <div class="imagecontainer">
+                    <img src="./images/box/grey-background.jpg" alt="app dev"/>
+                </div>
+                <button class="my-button">Explore<span></span></button>
+                
+        </div>
+    </section>
+
+
+
+    <!---End 3 Flex bar-->
+    <section>
+    <div class="vison">
+        <div class="container">
+            <div class="box" id="box1">
+                <img src="./images/Vector.png" alt="">
+             <h3 ><strong>
+                Morem ipsum  </strong></h3> 
+             <br> 
+            <p> Corem ipsum dolor sit amet, consectetur adipiscing elit.,Corem ipsum dolor sit amet, consectetur</p>
+            <br>
+            <button  onclick="window.location.href = 'https://ide.geeksforgeeks.org';"><b> APPLY</b><span></span></button>
+            </div>
+
+        <div class="box" id="box2">
+            <img src="./images/Vector.png" alt="">
+                <h3 ><strong>
+                   Morem ipsum  </strong></h3> 
+                <br> 
+               <p> Corem ipsum dolor sit amet, consectetur adipiscing elit,consectetur adipiscing elit.</p>
+               <br>
+               <button  onclick="window.location.href = 'https://ide.geeksforgeeks.org';"><b> EXPLORE</b><span></span></button>
+               </div>
+
+
+        <div class="box" id="box3">
+                <img src="./images/Vector.png" alt="">
+                <h3 ><strong>
+                   Morem ipsum  </strong></h3> 
+                <br> 
+               <p> Corem ipsum dolor sit amet, consectetur adipiscing elit Corem ipsum dolor sit amet, consectetur.</p>
+               <br>
+               <button  onclick="window.location.href = 'https://ide.geeksforgeeks.org';"><b>SAMPLE PAPERS</b><span></span></button>
+               </div>
+            
+            
+        </div> 
+        
+      </div>
+      </section>
+
+
+      <!---Infrastructure Part-->
+      
+        <div class="infrastructure">
+            <h3>INFRASTRUCTURE</h3>
+            <hr>
+            <div class="infra-grid">
+                <div class="gridcontainer">
+                   <div class="card">
+                       <div class="imagecontainer">
+                           <img src="./images/box/Rectangle 15.png" alt="web dev"/>
+                       </div>
+                       <h3>Jorem ipsum </h3>
+                        <h4>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h4>
+                   </div>
+               </div>
+              
+               <div class="gridcontainer">
+                   <div class="card">
+                       <div class="imagecontainer">
+                           <img src="./images/box/Rectangle 15.png" alt="app dev"/>
+                       </div>
+                       <h3>Jorem ipsum </h3>
+                       <h4>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h4>
+                      
+                   </div>
+               </div>
+       
+               <div class="gridcontainer">
+                   <div class="card" id="card3">
+                       <div class="imagecontainer">
+                           <img src="./images/box/Rectangle 15.png" alt="app dev"/>
+                       </div>
+                       <h3>Jorem ipsum </h3>
+                       <h4>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h4>
+                       
+               </div>
+           </div>
+           <div class="gridcontainer">
+            <div class="card" id="card4">
+                <div class="imagecontainer">
+                    <img src="./images/box/Rectangle 15.png" alt="app dev"/>
+                </div>
+                <h3>Jorem ipsum </h3>
+                 <h4>Gorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h4>
+                
+        </div>
+    </div>
+        </div>
+        </div>
+      
+
+
+
+<!--RESEARCH SPOTLIGHT-->
+
+
+
+
+
+        <div class="research">
+            <div class="infrastructure">
+                <div class="Research-headings"><h3 style="color:#562B3C">Reasearch </h3>
+                    <h3 style="color:#CDA309">  Spotlight</h3>
+                </div>
+                <hr>
+                
+                   
+                        <div class="row">
+                            <div class="card">
+                            <div class="card-body">
+                                <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+                        <p style="color: #3D414C">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        <div class="read-more">
+                    <a href="#">Read More -></a>
+                    
+                </div>
+                <div class="read-more">
+                    <a href="#">Research Guidelines -></a>
+                    
+                </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+                    <p style="color: #3D414C">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    <div class="read-more">
+                <a href="#">Read More -></a>
+                
+            </div>
+            <div class="read-more">
+                <a href="#">Research Guidelines -></a>
+                
+            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+                <p style="color: #3D414C">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                </p>
+                <div class="read-more">
+            <a href="#">Read More -></a>
+            
+        </div>
+        <div class="read-more">
+            <a href="#">Research Guidelines -></a>
+            
+        </div>
+                </div>
+            </div>
+                    
+                    
+                </div>
+                    
+                
+            </div>
+                </div>
+                
+
+
+
+
+<!--Eventssss-->
+
+
+<div class="events">
+
+                <div class="research">
+                    <div class="infrastructure">
+                        <div class="Research-headings"><h3 style="color:#562B3C">EVENTS </h3>
+                        </div>
+                        <hr>
+                        
+                           
+                                <div class="row">
+                                    <div class="card">
+                                        <img src="./images/box/brown-background.jpg" alt="">     
+                                    <div class="card-body">
+                                
+                                <p style="color: #3D414C">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                                </p>
+                               
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="./images/box/brown-background.jpg" alt="">
+                                <div class="card-body">
+                                   
+                            <p style="color: #3D414C">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                            </p>
+                            
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./images/box/brown-background.jpg" alt="">
+                            <div class="card-body">
+                               
+                        <p style="color: #3D414C">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        
+                        </div>
+                        
+                    </div>
+                        <div class="card">
+                            <img src="./images/box/brown-background.jpg" alt="">
+                            <div class="card-body">
+                               
+                        <p style="color: #3D414C">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                        </p>
+                        
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./images/box/brown-background.jpg" alt="">
+                        <div class="card-body">
+                            
+                    <p style="color: #3D414C">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    
+                    </div>
+                
+                </div>
+                            
+                        </div>
+                            
+                        
+                    </div>
+                        </div>
+
+</div>
+
+
+
+
+
+
+
+<!--BUTTONSSSS-->
+<div class="buttonsEnd">
+<section>
+    <div class="vison">
+        <div class="container">
+            <div class="box" id="box1">
+             <h3 ><strong>
+                Know School → </strong></h3> 
+             <br> 
+           
+            </div>
+
+        <div class="box" id="box2">
+         
+                <h3 ><strong>
+                   Academics → </strong></h3> 
+                <br> 
+             
+</div>
+
+        <div class="box" id="box3">
+               
+               <h3 ><strong> 
+                   Campus life → </strong></h3> 
+                <br> 
+               </div>
+               <div class="box" id="box3">
+               
+                <h3 ><strong> 
+                    Know Founder→ </strong></h3> 
+                 <br> 
+                </div>
+            
+        </div> 
+        
+      </div>
+      </section>
+    </div>
+
+
+
+
+
+
+
+<!--Below Buttonsss-->
+<div class="Belowbuttons">
+
+    <div class="research">
+        <div class="infrastructure">            
+               
+                    <div class="row">
+                        <div class="card">
+                        <div class="card-body">
+                            <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+                    <p style="color: #3D414C">
+                        Lorem ipsum dolor sit amet, uasi neque molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                    </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+                <p style="color: #3D414C">
+                    Lorem ipsum dolor sit amet, que molestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+                </p>
+                
+       
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+            <p style="color: #3D414C">
+                Lorem ipsum dolor sit amemolestiae eius explicabo mollitia tempore reiciendis, vel, sequi.
+            </p>
+           
+            </div>
+        </div>
+            <div class="card">
+                <div class="card-body">
+                    <p style="font-size:larger;font-weight:bold;padding:0 0 5px 0;color: #3D414C">Lorem Ipsum</p>
+            <p style="color: #3D414C">
+                Lorem ipsum dolor sit amet, consectetur adivel, sequi.
+            </p>
+            
+            </div>
+        </div>
+                
+                
+            </div>
+                
+            
+        </div>
+            </div>
+            
+</div>
+
+
+
+ 
+
+
+
+
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ModifiersPlugin.min.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ThrowPropsPlugin.min.js'></script>
+
+
+
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
