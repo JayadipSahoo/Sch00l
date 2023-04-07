@@ -378,6 +378,7 @@ a{
   transition: 0.2s ease-in-out;
   background-color: #562B3C;
 }
+
 .infrastructure .card .imagecontainer{
   height: 303px;
   width: 220px;
@@ -402,6 +403,16 @@ a{
   font-size: 20px;
 }
 
+@media(max-width:600px){
+  .infrastructure img{
+ 
+    padding: 10px ;
+
+  }
+  .infrastructure .card{
+    width: 300px;
+  }
+}
 
 
 
@@ -450,7 +461,9 @@ font-size: 18px;
 
 }
 }
-
+@media(max-width:900px){
+  
+}
 
 
 .research .heading {
@@ -479,8 +492,8 @@ font-size: 30px;
 justify-content: space-around;
 flex-flow: wrap;
 height: auto;
+max-width: 100%;
 
-  margin: 50px auto;
 }
 @media(max-width:900px){
   .research .row{
