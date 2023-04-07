@@ -1029,7 +1029,7 @@ height: auto;
     position: relative;
     display: block;
     border: solid 1px gray;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
