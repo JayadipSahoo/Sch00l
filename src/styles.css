@@ -581,14 +581,17 @@ height: auto;
   background-color: #f7f7f7;
   border: 0;
   position: relative;
-  
+  margin-top: 80px;
   margin-bottom: 0%;
 }
 
 .buttonsEnd #box1, .buttonsEnd #box2, .buttonsEnd #box3{
   height: 100px;
-  padding: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+ 
 
 }
 
@@ -819,6 +822,14 @@ height: auto;
 }
 #slide1{
   background-color: red;
+  display: block;
+  gap: 10px;
+  padding: 30px;
+}
+#slide1 button{
+  background-color: black;
+  border:5px #e1e1e1;
+  color: #ccc;
 }
 
 #slide3{
@@ -838,6 +849,7 @@ height: auto;
 .navigation2 {
   height: 60px;
   background:#F9E4D4;
+  
  
 }
 .brand img,.searchBtn img{
@@ -1017,18 +1029,20 @@ height: auto;
   position: relative;
   display: block;
   border: solid 1px gray;
-  height: 400px;
+  height: 90vh;
   width: 100%;
-  overflow: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0;
+  box-sizing: border-box; /* add this line */
 }
 
 .slide{
   display: flex;
   position: absolute;
-  height: 400px;
+  height: 90vh;
   width: 100%;
-
+  
   box-sizing: border-box;
   color: #fff;
   font-size: 36px;
@@ -1055,3 +1069,5 @@ height: auto;
 #slide5{
   background-color: rgb(19, 19, 19);
 }
+
+
