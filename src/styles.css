@@ -442,6 +442,7 @@ font-size: 18px;
 
     display: block;
     position: relative;
+    max-width: 100%;
    
     height: auto;
 
